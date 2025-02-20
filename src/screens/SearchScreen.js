@@ -37,7 +37,6 @@ const SearchScreen = ({ navigation }) => {
   const handleSearchTypeChange = (newType) => {
     setSearchType(newType);
     if (searchText.trim()) {
-      // If there's already a search term, automatically search with new type
       handleSearch(1);
     }
   };
